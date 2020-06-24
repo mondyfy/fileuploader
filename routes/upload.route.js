@@ -9,8 +9,13 @@ router.use(fileUpload({
 ));
 
 router
-    .route('/')
-    /** POST http://localhost:3000/upload - upload files to aws s3 bucket */
-    .post(uploadCtrl.uploadFiles)
+    .route('/aws')
+    /** POST http://localhost:3000/upload/aws - upload files to aws s3 bucket */
+    .post(uploadCtrl.uploadFileToAws)
+
+router
+    .route('/gcs')
+    /** POST http://localhost:3000/upload/gcs - upload files to gcs */
+    .post(uploadCtrl.uploadFileToGcs)
 
 module.exports = router;

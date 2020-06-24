@@ -1,4 +1,9 @@
-# AWS S3 file Upload Example
+# Online FIle Storage: File Upload Service
+
+## Supports
+
+- AWS S3
+- GCS
 
 ## Uses
 
@@ -7,6 +12,7 @@
 -   dotenv
 -   express-fileupload
 -   aws-sdk
+-   google-cloud/storage
 
 
 Getting Started
